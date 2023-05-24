@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relógio do DIM DIM</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function () {
@@ -17,14 +18,16 @@
     </script>
 </head>
 <body>
-    <div id="hours">
-        <%= erb :hours %>
-    </div>
+    <div id="relogio">
+        <div id="hours">
+            <%= erb :hours %>
+        </div>
         <div id="minutes">
-        <%= erb :minutes %>
-    </div>
+            <%= erb :minutes %>
+        </div>
         <div id="seconds">
-        <%= erb :seconds %>
-    </div>
+            <%= erb :seconds %>
+        </div>
+    <div>
 </body>
 </html>

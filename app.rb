@@ -3,6 +3,7 @@ require 'thin'
 require_relative 'helpers/time_helper'
 
 set :server, :thin
+set :public_folder, File.dirname(__FILE__) + '/public'
 
 get '/' do
     erb :index
