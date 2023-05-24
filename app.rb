@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'thin'
 require_relative 'helpers/time_helper'
+require 'sinatra/r18n'
 
 set :server, :thin
 set :public_folder, File.dirname(__FILE__) + '/public'
@@ -19,4 +20,8 @@ end
 
 get '/seconds' do
     erb :seconds
+end
+
+get '/date' do
+    erb :date
 end

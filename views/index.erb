@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,16 +18,29 @@
     </script>
 </head>
 <body>
-    <div id="relogio">
-        <div id="hours">
-            <%= erb :hours %>
+    <div class="clock-date">
+        <div class="clock">
+
+            <div>
+                <span id="hours"> <%= erb :hours %> </span>
+                <span class="temp">Horas</span>
+            </div>
+
+            <div>
+                <span id="minutes"> <%= erb :minutes %> </span>
+                <span class="temp">Minutos</span>
+            </div>
+
+            <div>
+                <span id="seconds"> <%= erb :seconds %> </span>
+                <span class="temp">Segundos</span>
+            </div>
+
+            
         </div>
-        <div id="minutes">
-            <%= erb :minutes %>
+        <div class="date-div">
+            <h6> <%= erb :date %> </h6> 
         </div>
-        <div id="seconds">
-            <%= erb :seconds %>
-        </div>
-    <div>
+    </div>
 </body>
 </html>

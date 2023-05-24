@@ -2,6 +2,8 @@ GEM
   remote: https://rubygems.org/
   specs:
     daemons (1.4.1)
+    date (3.3.3)
+    eventmachine (1.2.7)
     eventmachine (1.2.7-x64-mingw32)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
@@ -21,9 +23,11 @@ GEM
     tilt (2.1.0)
 
 PLATFORMS
+  x64-mingw-ucrt
   x64-mingw32
 
 DEPENDENCIES
+  date
   sinatra
   thin
 

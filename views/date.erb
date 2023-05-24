@@ -1,0 +1,14 @@
+<%
+    weekday = current_date.strftime('%A')   
+    day = current_date.strftime('%d')
+    month = current_date.strftime('%B')
+    year = current_date.strftime('%Y')
+
+    translate_weekday(weekday)
+    translate_month(month)
+
+%>
+
+<%= "#{@weekday_name}, #{day} de #{@month_name} de #{year}" %>
+
+
