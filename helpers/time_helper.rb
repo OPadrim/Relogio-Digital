@@ -2,7 +2,7 @@ require "sinatra/base"
 
 module TimeHelper
     def current_time
-        Time.now.strftime("%Y-%m-%d $H:%M:%S")
+        Time.now
     end
 end
 
